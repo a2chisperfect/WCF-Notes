@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c17d2149-a04c-4bab-8357-373032baeab5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8084/NotesService" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NotesService.xsd" MetadataType="Schema" ID="9b82d1f1-8804-47d9-931f-d3a0be2a0f6e" SourceId="1" SourceUrl="http://localhost:8084/NotesService?xsd=xsd0" />
+    <MetadataFile FileName="NotesService.wsdl" MetadataType="Wsdl" ID="544101c8-e8ee-461a-8b1e-2a35e6306241" SourceId="1" SourceUrl="http://localhost:8084/NotesService?wsdl" />
+    <MetadataFile FileName="NotesService1.xsd" MetadataType="Schema" ID="aed71fcb-0233-4967-8208-e884d1146375" SourceId="1" SourceUrl="http://localhost:8084/NotesService?xsd=xsd1" />
+    <MetadataFile FileName="NotesService2.xsd" MetadataType="Schema" ID="afed0ab3-1c8e-4e9b-9ff7-81b612d36bb9" SourceId="1" SourceUrl="http://localhost:8084/NotesService?xsd=xsd2" />
+    <MetadataFile FileName="NotesService.disco" MetadataType="Disco" ID="6535eef0-56a8-43c4-bac2-899354f4fd38" SourceId="1" SourceUrl="http://localhost:8084/NotesService?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

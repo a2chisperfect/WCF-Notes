@@ -1,0 +1,23 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Notes.Pages">
+
+    <Style x:Key="DefaultFontStyle">
+        <Setter Property="Control.FontFamily" Value="Comic sans ms"></Setter>
+    </Style>
+    
+    <DataTemplate  x:Key="ListBoxItemTemplate">
+        <Border HorizontalAlignment="Stretch" BorderThickness="1" CornerRadius="2" BorderBrush="Black">
+            <StackPanel >
+                <StackPanel.InputBindings>
+                    <MouseBinding Command="{Binding DataContext.ReadCommand, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:NotesPage}}}" Gesture="LeftDoubleClick"/>
+                </StackPanel.InputBindings>
+                <TextBlock Text="{Binding CreationDate, StringFormat='yyyy-MM-dd'}" FontSize="12"></TextBlock>
+                <TextBlock Text="{Binding Text}" TextTrimming="CharacterEllipsis" TextAlignment="Center" FontSize="15" FontStyle="Italic" FontWeight="Light"></TextBlock>
+            </StackPanel>
+        </Border>
+    </DataTemplate>
+    
+    <Color x:Key="DefaultBlue">#3099c5</Color>
+    <SolidColorBrush x:Key="ForegroundMain" Color="{StaticResource DefaultBlue}"></SolidColorBrush>
+</ResourceDictionary>
